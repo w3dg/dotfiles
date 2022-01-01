@@ -1,0 +1,13 @@
+[core]
+	editor = nano
+	safecrlf = false
+[user]
+	name = DG
+	email = 51162936+debopamgupta@users.noreply.github.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[credential]
+	helper = wincred
