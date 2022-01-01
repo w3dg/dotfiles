@@ -50,12 +50,14 @@ emoji() {
   printf "$EMOJI \n"
 }
 
-# Spin up a local python server in the current directory. Usage - `up <port>` if not specified, uses port 8421
+# Spin up a local python server in the current directory. Usage - `up <port>` if not specified, uses a random port
 up() {
   if [ -n "$1" ]; then
   python -m http.server $1
-  else echo "No port specified, running on :8421"
-  python -m http.server 8421
+  else echo "No port specified, running on a random port"
+  local PORT=$(($RANDOM+3000))
+  echo "Running on port $PORT"
+  python -m http.server $PORT
   fi
 }
 
