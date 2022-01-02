@@ -1,12 +1,10 @@
 # My Setup :computer:
 
-## Coding Stuff ( Requirements )
-
 ### Visual Studio Code <\\>
 
 #### Themes ➕ Extensions
 
- check out this [gist](https://gist.github.com/47b6902a8cb1cdebe1164378448bb784) for that. 
+check out this [gist](https://gist.github.com/47b6902a8cb1cdebe1164378448bb784) for that.
 
 ## :pancakes: MongoDB
 
@@ -16,19 +14,19 @@ Get it here:- https://nodejs.dev/
 
 npm_global modules access - https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
 
-* gitignore
-* live-server
-* npm-check-updates
-* npkill
-* reveal-md
-* serve
-* sass
-* tldr
-* ts-node
-* tsc
-* vercel
-* @vue/cli
-* yarn
+- gitignore
+- live-server
+- npm-check-updates
+- npkill
+- reveal-md
+- serve
+- sass
+- tldr
+- ts-node
+- tsc
+- vercel
+- @vue/cli
+- yarn
 
 Login to Vercel - `vercel login`
 
@@ -44,7 +42,7 @@ Get it (CLI ) here:- https://devcenter.heroku.com/articles/heroku-cli
 
 Login to heroku - `heroku login`
 
-## :ice_cream: Scoop packages  
+## :ice_cream: Scoop packages
 
 Install Scoop ( on windows ) : https://scoop.sh/
 
@@ -61,23 +59,22 @@ Get it from the Github repo or the Microsoft Store.
 
 #### Extensions for Chrome/Brave
 
-- Bitwarden  
-- Dark Reader  
-- DuckDuckGo Privacy Essentials  
-- Enhancer for Youtube  
-- Github File Icons  
-- JSON Viewer  
-- React / Vue Dev tools  
-- Refined Github  
-- Stylus  
-- Tabliss  
-- Twitch Auto Bonus  
-- uBlock Origin  
-
+- Bitwarden
+- Dark Reader
+- DuckDuckGo Privacy Essentials
+- Enhancer for Youtube
+- Github File Icons
+- JSON Viewer
+- React / Vue Dev tools
+- Refined Github
+- Stylus
+- Tabliss
+- Twitch Auto Bonus
+- uBlock Origin
 
 ## :coffee: **JDK** Java Development Kit
 
-Download the latest one 
+Download the latest one
 
 Set the **Path** variable for Java, Visual Studio Code, etc
 
@@ -92,7 +89,7 @@ Set the **Path** variable for Java, Visual Studio Code, etc
 - **OBS Studio** Record Screen, Stream etc. Get it here:- https://obsproject.com/
 - **Python** Just in case Get it:- https://www.python.org/
 - **Figma** Wireframing and prototyping. Use in the browser https://www.figma.com/ or download the Desktop Client: https://www.figma.com/downloads/
-- **Firefox Developer Edition** I do not use it much but... hey?   
+- **Firefox Developer Edition** I do not use it much but... hey?
 - **ROBO 3T** For mongo dbs
 - **Insomnia** https://insomnia.rest/
 - **Spotify**
@@ -104,20 +101,41 @@ Set the **Path** variable for Java, Visual Studio Code, etc
 - **Microsoft Office**
 - **Microsoft Teams**
 
-## Settings.json
+## VSCode
 
 Although I am pretty sure Settings Sync will handle this all but still heres a copy of the settings file.
 
-```json
-{
+<details>
+    <summary>Settings JSON for VSCode</summary>
+    <pre>
+    {
   "workbench.startupEditor": "none",
   "update.enableWindowsBackgroundUpdates": false,
   "editor.formatOnPaste": true,
   "editor.tabSize": 2,
-  "editor.fontFamily": "Roboto Mono",
+  "editor.fontFamily": "UbuntuMono NF",
+  "editor.cursorSmoothCaretAnimation": false,
+  "editor.cursorWidth": 3,
   "window.dialogStyle": "custom",
   "explorer.decorations.badges": false,
-  "workbench.colorCustomizations": {},
+  "workbench.colorCustomizations": {
+    "[Night Owl]": {
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "editorGroup.border": "#102a44",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
+    },
+    "[Night Owl (No Italics)]": {
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "editorGroup.border": "#102a44",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
+    }
+  },
   "editor.suggestSelection": "first",
   "java.configuration.checkProjectSettingsExclusions": false,
   "editor.minimap.enabled": false,
@@ -164,29 +182,29 @@ Although I am pretty sure Settings Sync will handle this all but still heres a c
   "explorer.confirmDelete": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "update.showReleaseNotes": false,
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "files.autoSaveDelay": 0,
   "explorer.incrementalNaming": "smart",
   "editor.fontLigatures": false,
   "terminal.integrated.drawBoldTextInBrightColors": false,
-  "editor.wordWrap": "on",
   "editor.wordWrapColumn": 100,
-  "java.home": "C:\\Program Files\\Java\\jdk-16.0.1",
+  "java.home": "C:\\Program Files\\Java\\jdk-17.0.1",
   "fontshortcuts.step": 0.1,
   "fontshortcuts.defaultTerminalFontSize": 18,
   "fontshortcuts.defaultFontSize": 20,
   "files.autoSave": "onFocusChange",
   "editor.renderWhitespace": "none",
-  "java.semanticHighlighting.enabled": true,
   "editor.cursorBlinking": "smooth",
-  "editor.tokenColorCustomizations": {},
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
   "editor.linkedEditing": true,
   "editor.formatOnType": true,
   "terminal.integrated.fontWeight": "400",
   "editor.renderLineHighlight": "gutter",
   "git.confirmSync": false,
   "editor.fontWeight": "400",
-  "editor.fontSize": 18,
+  "editor.fontSize": 20,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
@@ -197,22 +215,33 @@ Although I am pretty sure Settings Sync will handle this all but still heres a c
   "window.title": "${folderName} ${separator} ${appName}",
   "editor.inlineSuggest.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
-  "settingsSync.ignoredExtensions": ["emroussel.atomize-atom-one-dark-theme"],
   "security.workspace.trust.untrustedFiles": "open",
   "editor.bracketPairColorization.enabled": true,
   "editor.suggest.preview": true,
   "thunder-client.codeSnippetLanguage": "js-fetch",
-  "window.zoomLevel": -0.8,
-  "terminal.integrated.fontSize": 16,
-  "workbench.colorTheme": "Cobalt2"
+  "terminal.integrated.fontSize": 18,
+  "breadcrumbs.filePath": "off",
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "editor.lineHeight": 1.5,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+    // "java": true
+  },
+  "window.zoomLevel": -1,
+  "terminal.integrated.fontFamily": "Inconsolata NF",
+  "workbench.colorTheme": "Gotham"
 }
+</pre>
+</details>
 
-```
-
-
-## Keybindings JSON
-
-```json
+<details>
+<summary>Keybindings JSON</summary>
+<pre>
 // Place your key bindings in this file to override the defaults
 [
   {
@@ -259,17 +288,18 @@ Although I am pretty sure Settings Sync will handle this all but still heres a c
     "when": "terminalFocus"
   },
 
-  {
-    "key": "ctrl+w",
-    "command": "workbench.action.terminal.kill",
-    "when": "terminalFocus"
-  },
+{
+"key": "ctrl+w",
+"command": "workbench.action.terminal.kill",
+"when": "terminalFocus"
+},
 
-  {
-    "key": "ctrl+n",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalFocus"
-  }
+{
+"key": "ctrl+n",
+"command": "workbench.action.terminal.new",
+"when": "terminalFocus"
+}
 ]
 
-```
+</pre>
+</details>

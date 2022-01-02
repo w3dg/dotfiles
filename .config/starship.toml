@@ -12,9 +12,22 @@ add_newline = false
 # style_user = "bold dimmed blue"
 # show_always = true
 
+# [character]
+# success_symbol = "[❯](bold green)"
+# error_symbol = "[](bold red)"
+
+# some more symbols:
+# ➜
+# 
+# 
+# 
+# Replace the default "❯" symbol:
 [character]
-success_symbol = "[❯](bold green)"
-error_symbol = "[](bold red)"
+# success_symbol = "[](bold blue)[](bold yellow)[](bold green)"
+# error_symbol   = "[](bold red)[](bold red)[](bold red)"
+
+success_symbol = "[](bold green)"
+error_symbol   = "[](bold red)"
 
 [cmd_duration]
 min_time = 10_000  # Show command duration over 10,000 milliseconds (= 10 sec)
@@ -50,9 +63,9 @@ disabled = true
 [git_status]
 disabled = true
 
-# 
-# [git_branch]
-# symbol = " "
+
+[git_branch]
+symbol = " "
 # 
 [golang]
 symbol = " "
