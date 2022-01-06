@@ -19,7 +19,8 @@ These are my configuration files aka dotfiles
   - .inputrc
   - .npmrc
   - .config/starship.toml
-
+  - tabliss.json ( settings for tabliss )
+  
 - _**VSCode Settings**_ -
 
   I've tried to include VSCode settings as well, although that may keep changing. You can find them in the [Setup]("./Setup.md").

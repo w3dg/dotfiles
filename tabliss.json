@@ -1,0 +1,114 @@
+{
+  "backgrounds": [
+    {
+      "active": true,
+      "display": {
+        "blur": 0,
+        "luminosity": 0
+      },
+      "id": "fcba5800-ebe1-4832-ad15-33191c292133",
+      "key": "background/unsplash"
+    }
+  ],
+  "widgets": [
+    {
+      "active": true,
+      "display": {
+        "fontFamily": "Cascadia Code",
+        "fontSize": 14,
+        "position": "topRight"
+      },
+      "id": "59007d63-ecc2-40c5-be4d-607aa841d69c",
+      "key": "widget/time"
+    },
+    {
+      "active": true,
+      "display": {
+        "fontFamily": "Cascadia Code",
+        "position": "middleCentre"
+      },
+      "id": "cf5e56a5-a9ef-4f90-b687-e818c45d8799",
+      "key": "widget/greeting"
+    },
+    {
+      "active": true,
+      "display": {
+        "fontFamily": "Cascadia Code",
+        "fontSize": 20,
+        "position": "middleCentre"
+      },
+      "id": "d59f17b3-9f97-4efa-9d45-e0f0c03d407b",
+      "key": "widget/links"
+    }
+  ],
+  "data": {
+    "02f46bae-d49c-4b28-87f0-f2fec667d412": {
+      "by": "search",
+      "collections": "",
+      "featured": false,
+      "search": "",
+      "timeout": 0
+    },
+    "082d74b4-dc7a-485e-96e4-908769d3460b": {
+      "expand": false,
+      "nsfw": false,
+      "tag": "pattern"
+    },
+    "59007d63-ecc2-40c5-be4d-607aa841d69c": {
+      "hour12": false,
+      "mode": "digital",
+      "name": "",
+      "showDate": false,
+      "showDayPeriod": true,
+      "showMinutes": true,
+      "showSeconds": false
+    },
+    "cf5e56a5-a9ef-4f90-b687-e818c45d8799": {
+      "name": "DG"
+    },
+    "d59f17b3-9f97-4efa-9d45-e0f0c03d407b": {
+      "columns": 5,
+      "linkOpenStyle": true,
+      "links": [
+        {
+          "icon": "github",
+          "name": "Github",
+          "url": "https://github.com/"
+        },
+        {
+          "icon": "youtube",
+          "name": "Youtube",
+          "url": "https://www.youtube.com/"
+        },
+        {
+          "icon": "twitch",
+          "name": "Twitch",
+          "url": "https://twitch.tv/"
+        },
+        {
+          "icon": "package",
+          "name": "NPM",
+          "url": "https://npmjs.com"
+        },
+        {
+          "icon": "zap",
+          "name": "MDN",
+          "url": "https://mdn.io"
+        },
+        {
+          "icon": "check-circle",
+          "name": "Google Tasks",
+          "url": "https://tasks.google.com/embed/?origin=https://calendar.google.com&fullWidth=1"
+        }
+      ],
+      "visible": true
+    },
+    "e748590a-7850-45b1-89c6-6ab76fa1a529": {
+      "colour": "#0d0d0d"
+    }
+  },
+  "_persist": {
+    "version": -1,
+    "rehydrated": true
+  }
+}
