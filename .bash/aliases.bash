@@ -1,8 +1,3 @@
-
-# Python alias on Windows
-alias python='winpty python.exe'
-alias python3='winpty python.exe'
-
 # Bash Aliases
 
 # `ls` ALIASED TO `lsd` Website: https://github.com/Peltoche/lsd
@@ -10,7 +5,8 @@ alias python3='winpty python.exe'
 alias ls='lsd'
 # alias ls='ls --color -F --group-directories-first' # for normal ls
 alias ls='lsd --group-dirs first'
-alias ll='ls -lAh --total-size'
+alias lt='ls -lAh --total-size'
+alias ll='ls -lAh'
 alias l='ls -1'
 alias la='ls -A'
 alias sl='ls'
