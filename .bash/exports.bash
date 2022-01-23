@@ -12,4 +12,4 @@ export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear" # Dont record some comman
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # Set bat theme
-export BAT_THEME="ansi"
+# export BAT_THEME="ansi"
