@@ -1,6 +1,6 @@
 ### ARCHIVE EXTRACTION
 # usage: extract <file>
-extract ()
+ex()
 {
   if [ -f "$1" ] ; then
     case $1 in
@@ -30,16 +30,12 @@ mkcd() {
   mkdir $1 && cd $1
 }
 
-# do all at once git
-gacp() {
-  git add . && git commit -m $1 && git push
-}
-
-# compile and run a given java file. Usage - `jrun <filename without the extension>`
+# compile and run a given java file. Usage - `jrun filename.java`
 jrun() { 
-  if [ -n "$1" ]; then
-  javac $1.java && java $1
-  else echo "Specify java file name to compile"
+  if [ -f "$1" ]; then
+  local classname=`basename $1 .java`
+  javac $1 && java $classname
+  else echo "Usage - jrun filename.java . Either the file does not exist or you have not provided the correct file name"
   fi
 }
 
@@ -71,7 +67,8 @@ todo(){
 
 # Uses fzf, fd
 cd_with_fzf() {
-    cd $HOME && cd "$(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)"
+    # cd $HOME && cd "$(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)"
+	cd "$(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)"
 }
 
 # Examples:
