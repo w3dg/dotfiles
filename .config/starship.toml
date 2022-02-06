@@ -11,6 +11,7 @@ $hostname\
 $shlvl\
 $singularity\
 $kubernetes\
+$battery\
 $directory\
 $vcsh\
 $git_branch\
@@ -68,13 +69,15 @@ $time\
 $cmd_duration\
 $line_break\
 $jobs\
-$battery\
 $status\
 $shell\
 $character"""
 
 
 # ~/.config/starship.toml
+
+# [git_branch]
+# symbol = "שׂ "
 
 [time]
 disabled = false

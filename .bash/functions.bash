@@ -71,6 +71,11 @@ cd_with_fzf() {
 	cd "$(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)"
 }
 
+cdf() {
+	cd_with_fzf
+}
+
+
 # Examples:
 #     ix hello.txt              # paste file (name/ext will be set).
 #     echo Hello world. | ix    # read from STDIN (won't set name/ext).
