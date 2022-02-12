@@ -1,5 +1,5 @@
 [core]
-	editor = nano
+	editor = micro
 	safecrlf = false
 [user]
 	name = DG
