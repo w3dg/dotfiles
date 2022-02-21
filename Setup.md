@@ -71,7 +71,7 @@ Get it from the Github repo or the Microsoft Store.
 - Tabliss
 - Twitch Auto Bonus
 - uBlock Origin
-- Startpage https://github.com/deepjyoti30/startpage
+- Glide - https://github.com/KraXen72/glide OR Startpage https://github.com/deepjyoti30/startpage
 - minimal twitter
 
 ## :coffee: **JDK** Java Development Kit
