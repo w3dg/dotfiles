@@ -8,7 +8,7 @@
   "launchMode": "default",
   "profiles": {
     "defaults": {
-      "colorScheme": "Pnevma",
+      "colorScheme": "wulf",
       "font": {
         "face": "mononoki NF",
         "size": 12,
@@ -79,6 +79,28 @@
   "selectionBackground": "#4d4d4d",
   "cursorColor": "#e4c9af"
 },
+
+  {
+  	  "name": "wulf",
+  	  "black": "#282828",
+  	  "red": "#e93c93",
+  	  "green": "#00a17c",
+  	  "yellow": "#f79031",
+  	  "blue": "#00c0ce",
+  	  "purple": "#86458b",
+  	  "cyan": "#8eb173",
+  	  "white": "#d3cab3",
+  	  "brightBlack": "#454545",
+  	  "brightRed": "#a87181",
+  	  "brightGreen": "#76a571",
+  	  "brightYellow": "#d0a845",
+  	  "brightBlue": "#008ba5",
+  	  "brightPurple": "#a0446c",
+  	  "brightCyan": "#007d62",
+  	  "brightWhite": "#f4f3e2",
+  	  "foreground": "#fbf0d2",
+  	  "background": "#181512"
+  	},	
     {
   "name": "SeaShells",
   "black": "#17384c",
