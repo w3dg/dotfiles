@@ -6,6 +6,8 @@
 
 check out this [gist](https://gist.github.com/47b6902a8cb1cdebe1164378448bb784) for that.
 
+> This may not get updated very regularly, i have settings sync enabled. Will try to update as soon as possible. :)
+
 ## :pancakes: MongoDB
 
 ## 💠 Node.js
@@ -111,133 +113,117 @@ Although I am pretty sure Settings Sync will handle this all but still heres a c
     <summary>Settings JSON for VSCode</summary>
     <pre>
     {
-  "workbench.startupEditor": "none",
-  "update.enableWindowsBackgroundUpdates": false,
-  "editor.formatOnPaste": true,
-  "editor.tabSize": 2,
-  "editor.fontFamily": "UbuntuMono NF",
-  "editor.cursorSmoothCaretAnimation": false,
-  "editor.cursorWidth": 3,
-  "window.dialogStyle": "custom",
-  "explorer.decorations.badges": false,
-  "workbench.colorCustomizations": {
-    "[Night Owl]": {
-      "activityBar.background": "#000C1D",
-      "activityBar.border": "#102a44",
-      "editorGroup.border": "#102a44",
-      "sideBar.background": "#001122",
-      "sideBar.border": "#102a44",
-      "sideBar.foreground": "#8BADC1"
-    },
-    "[Night Owl (No Italics)]": {
-      "activityBar.background": "#000C1D",
-      "activityBar.border": "#102a44",
-      "editorGroup.border": "#102a44",
-      "sideBar.background": "#001122",
-      "sideBar.border": "#102a44",
-      "sideBar.foreground": "#8BADC1"
+      "workbench.startupEditor": "none",
+      "update.enableWindowsBackgroundUpdates": false,
+      "editor.formatOnPaste": true,
+      "editor.tabSize": 2,
+      "editor.fontFamily": "JetBrainsMono NF, Anonymice NF",
+      "editor.cursorSmoothCaretAnimation": false,
+      "editor.cursorWidth": 3,
+      "window.dialogStyle": "custom",
+      "explorer.decorations.badges": false,
+      "workbench.colorCustomizations": {},
+      "editor.suggestSelection": "first",
+      "java.configuration.checkProjectSettingsExclusions": false,
+      "editor.minimap.enabled": false,
+      "java.errors.incompleteClasspath.severity": "ignore",
+      "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+      },
+      "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+      },
+      "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+      },
+      "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+      },
+      "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "window.autoDetectHighContrast": false,
+      "extensions.ignoreRecommendations": true,
+      "workbench.tree.indent": 10,
+      "debug.console.fontSize": 17,
+      "editor.multiCursorModifier": "ctrlCmd",
+      // "editor.cursorSmoothCaretAnimation": true,
+      "editor.minimap.renderCharacters": false,
+      "workbench.tree.renderIndentGuides": "always",
+      "editor.formatOnSave": true,
+      "window.newWindowDimensions": "maximized",
+      "explorer.confirmDragAndDrop": false,
+      "editor.find.addExtraSpaceOnTop": false,
+      "markdown.preview.lineHeight": 1,
+      "workbench.editor.enablePreview": false,
+      "explorer.confirmDelete": false,
+      "javascript.updateImportsOnFileMove.enabled": "always",
+      "update.showReleaseNotes": false,
+      "telemetry.telemetryLevel": "off",
+      "files.autoSaveDelay": 0,
+      "explorer.incrementalNaming": "smart",
+      "editor.fontLigatures": false,
+      "editor.wordWrapColumn": 100,
+      "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-17.0.1",
+      "fontshortcuts.step": 0.1,
+      "fontshortcuts.defaultTerminalFontSize": 18,
+      "fontshortcuts.defaultFontSize": 20,
+      "files.autoSave": "onFocusChange",
+      "editor.cursorBlinking": "smooth",
+      "editor.tokenColorCustomizations": {
+        "textMateRules": []
+      },
+      "editor.linkedEditing": true,
+      "editor.formatOnType": true,
+      "terminal.integrated.fontWeight": "400",
+      "editor.renderLineHighlight": "gutter",
+      "git.confirmSync": false,
+      "editor.fontWeight": "400",
+      "editor.fontSize": 18,
+      "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+      },
+      "terminal.integrated.defaultProfile.windows": "Git Bash",
+      "workbench.settings.openDefaultKeybindings": true,
+      "terminal.integrated.tabs.enabled": true,
+      "terminal.integrated.cursorBlinking": true,
+      "window.title": "${rootName} ${appName}",
+      "editor.inlineSuggest.enabled": true,
+      "workbench.iconTheme": "file-icons",
+      "security.workspace.trust.untrustedFiles": "open",
+      "editor.bracketPairColorization.enabled": true,
+      "editor.suggest.preview": true,
+      "thunder-client.codeSnippetLanguage": "js-fetch",
+      "terminal.integrated.fontSize": 18,
+      "breadcrumbs.filePath": "off",
+      "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+      },
+      "editor.lineHeight": 1.5,
+      "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": false,
+        "markdown": false,
+        "java": true
+      },
+      "window.zoomLevel": -1,
+      "settingsSync.ignoredExtensions": ["sldobri.bunker"],
+      "go.toolsManagement.autoUpdate": true,
+      "workbench.colorTheme": "Vitesse Dark",
+      "workbench.productIconTheme": "icons-carbon",
+      "prettier.printWidth": 200
     }
-  },
-  "editor.suggestSelection": "first",
-  "java.configuration.checkProjectSettingsExclusions": false,
-  "editor.minimap.enabled": false,
-  "java.errors.incompleteClasspath.severity": "ignore",
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "window.autoDetectHighContrast": false,
-  "extensions.ignoreRecommendations": true,
-  "workbench.tree.indent": 10,
-  "debug.console.fontSize": 17,
-  "editor.multiCursorModifier": "ctrlCmd",
-  // "editor.cursorSmoothCaretAnimation": true,
-  "editor.minimap.renderCharacters": false,
-  "workbench.tree.renderIndentGuides": "always",
-  "editor.formatOnSave": true,
-  "window.newWindowDimensions": "maximized",
-  "editor.suggestFontSize": 18,
-  "explorer.confirmDragAndDrop": false,
-  "editor.find.addExtraSpaceOnTop": false,
-  "markdown.preview.lineHeight": 1,
-  "workbench.editor.enablePreview": false,
-  "explorer.confirmDelete": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "update.showReleaseNotes": false,
-  "telemetry.telemetryLevel": "off",
-  "files.autoSaveDelay": 0,
-  "explorer.incrementalNaming": "smart",
-  "editor.fontLigatures": false,
-  "terminal.integrated.drawBoldTextInBrightColors": false,
-  "editor.wordWrapColumn": 100,
-  "java.home": "C:\\Program Files\\Java\\jdk-17.0.1",
-  "fontshortcuts.step": 0.1,
-  "fontshortcuts.defaultTerminalFontSize": 18,
-  "fontshortcuts.defaultFontSize": 20,
-  "files.autoSave": "onFocusChange",
-  "editor.renderWhitespace": "none",
-  "editor.cursorBlinking": "smooth",
-  "editor.tokenColorCustomizations": {
-    "textMateRules": []
-  },
-  "editor.linkedEditing": true,
-  "editor.formatOnType": true,
-  "terminal.integrated.fontWeight": "400",
-  "editor.renderLineHighlight": "gutter",
-  "git.confirmSync": false,
-  "editor.fontWeight": "400",
-  "editor.fontSize": 20,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "workbench.settings.openDefaultKeybindings": true,
-  "terminal.integrated.tabs.enabled": true,
-  "terminal.integrated.cursorBlinking": true,
-  "window.title": "${folderName} ${separator} ${appName}",
-  "editor.inlineSuggest.enabled": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.suggest.preview": true,
-  "thunder-client.codeSnippetLanguage": "js-fetch",
-  "terminal.integrated.fontSize": 18,
-  "breadcrumbs.filePath": "off",
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
-  },
-  "editor.lineHeight": 1.5,
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": false
-    // "java": true
-  },
-  "window.zoomLevel": -1,
-  "terminal.integrated.fontFamily": "Inconsolata NF",
-  "workbench.colorTheme": "Gotham"
-}
+    
 </pre>
 </details>
 

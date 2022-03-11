@@ -8,10 +8,10 @@
   "launchMode": "default",
   "profiles": {
     "defaults": {
-      "colorScheme": "wulf",
+      "colorScheme": "Gruvbox Dark",
       "font": {
-        "face": "mononoki NF",
-        "size": 12,
+        "face": "JetBrainsMono NF",
+        "size": 11,
         "weight": "normal"
       }
     },
@@ -56,31 +56,29 @@
     ]
   },
 
-  "schemes": [{
-  "name": "Pnevma",
-  "black": "#2f2e2d",
-  "red": "#a36666",
-  "green": "#90a57d",
-  "yellow": "#d7af87",
-  "blue": "#7fa5bd",
-  "purple": "#c79ec4",
-  "cyan": "#8adbb4",
-  "white": "#d0d0d0",
-  "brightBlack": "#4a4845",
-  "brightRed": "#d78787",
-  "brightGreen": "#afbea2",
-  "brightYellow": "#e4c9af",
-  "brightBlue": "#a1bdce",
-  "brightPurple": "#d7beda",
-  "brightCyan": "#b1e7dd",
-  "brightWhite": "#efefef",
-  "background": "#1c1c1c",
-  "foreground": "#d0d0d0",
-  "selectionBackground": "#4d4d4d",
-  "cursorColor": "#e4c9af"
-},
-
-  {
+  "schemes": [
+  	{
+  	  "name":"miaminights",
+  	  "black": "#333333",
+  	  "red": "#8c4665",
+  	  "green": "#287373",
+  	  "yellow": "#f74372",
+  	  "blue": "#40bfa6",
+  	  "purple": "#f82b4a",
+  	  "cyan": "#31658c",
+  	  "white": "#d3d7cf",
+  	  "brightBlack": "#3d3d3d",
+  	  "brightRed": "#bf4d80",
+  	  "brightGreen": "#53a6a6",
+  	  "brightYellow": "#db63b5",
+  	  "brightBlue": "#40ddc2",
+  	  "brightPurple": "#f2397a",
+  	  "brightCyan": "#6096bf",
+  	  "brightWhite": "#c0c0c0",
+  	  "background": "#181512",
+  	  "foreground": "#eddcd3"
+  	},
+    {
   	  "name": "wulf",
   	  "black": "#282828",
   	  "red": "#e93c93",
