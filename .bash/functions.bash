@@ -50,16 +50,13 @@ emoji() {
 up() {
   if [ -n "$1" ]; then
   python -m http.server $1
-  else echo "No port specified, running on a random port"
+  else 
   local PORT=$(($RANDOM+3000))
-  echo "Running on port $PORT"
+  echo "[+] No port specified, running on a random port: $PORT"
   python -m http.server $PORT
   fi
 }
 
-#####################
-## CAT OUT TODOSLIST
-################
 todo(){
 	/usr/bin/cat ~/workspace/temp/TODO.md	
 	printf "\n" 
@@ -107,3 +104,42 @@ ix() {
     }
     curl $opts -F f:1='<-' $* ix.io/$id
 }
+
+### Qickly make a backup of a file
+
+back() { 
+	cp "$1"{,.bak};
+}
+
+# md5check [file] [key]
+
+ # md5check() {
+	 # if[ -f "$1" ]; then
+	 # md5sum "$1" | grep "$2";
+	 # else
+	 # echo "Usage: md5check [file] [key]"
+	 # fi
+ # }
+# 
+
+# Dog - https://github.com/ogham/dog
+
+
+todos() {
+	rg 'TODO|FIXME|WARN|BUG'
+}
+
+# gbr_trim() {
+	  # local var="$*"
+	  # var="${var#"${var%%[![:space:]]*}"}"
+	  # var="${var%"${var##*[![:space:]]}"}"
+	  # echo -n "$var"
+	# }
+# 
+# gbr() {
+	# BRANCH=$(gbr_trim "$(git branch --all | rg -v "^\*" | sed "s/remotes\/origin\///g" | sort | uniq | grep -v HEAD | fzf)")
+	# if [[ -n "$BRANCH" ]]; then
+	   # echo "Switching to $BRANCH"
+	      # git checkout "$BRANCH"
+	# fi
+# }

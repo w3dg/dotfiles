@@ -1,8 +1,8 @@
 # Inserts a blank line between shell prompts
-add_newline = false
+add_newline = true
 # Make prompt a single line instead of two lines
 [line_break]
-disabled = true
+disabled = false
 # Change command timeout from 500 to 1000 ms
 command_timeout = 500
 
