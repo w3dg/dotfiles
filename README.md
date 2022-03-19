@@ -19,6 +19,8 @@ These are my configuration files aka dotfiles
   - .inputrc
   - .npmrc
   - .config/starship.toml
+  - bin/
+  - config/
   - tabliss.json ( settings for tabliss )
   
 - _**VSCode Settings**_ -
@@ -35,6 +37,7 @@ These are my configuration files aka dotfiles
   - Ubuntu Mono
   - mononoki
   - Fira Mono
+  - Nerd fonts of the above.
 
   Some other nice but paid fonts include -
 
@@ -42,7 +45,3 @@ These are my configuration files aka dotfiles
   - Operator Mono
 
 For more details, check [Setup.md](./Setup.md)
-
-<p align=center>
-  <img src="./assets/promptimage.jpg">
-</p>

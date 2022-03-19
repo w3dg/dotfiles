@@ -30,13 +30,23 @@ mkcd() {
   mkdir $1 && cd $1
 }
 
-# compile and run a given java file. Usage - `jrun filename.java`
-jrun() { 
+# In JDK 11+ theres no need to do this separately, just `java filename.java`
+# Compile and run a given java file. Usage - `jrun filename.java`
+# One known caveat - if you have the file in a package, using this will remove that nested filepath. 
+# Use dirname and basename to get the correct filepath to javac. Also the `./` path has to be removed from the filepath if any.
+# I dont use this anymore hence, its `__`ed.
+__jrun() { 
   if [ -f "$1" ]; then
   local classname=`basename $1 .java`
   javac $1 && java $classname
   else echo "Usage - jrun filename.java . Either the file does not exist or you have not provided the correct file name"
   fi
+}
+
+# JDK 11+
+# Compile and run a given java file. Useful for small programs. Usage - `jrun filename.java`
+jrun () {
+  java $1
 }
 
 # get a random emoji. Usage - `emoji`
@@ -46,20 +56,31 @@ emoji() {
   printf "$EMOJI \n"
 }
 
-# Spin up a local python server in the current directory. Usage - `up <port>` if not specified, uses port 8421
+# Spin up a local python server in the current directory. Usage - `up <port>` if not specified, uses a random port
 up() {
-  if [ -n "$1" ]; then
-  python -m http.server $1
-  else 
-  local PORT=$(($RANDOM+3000))
-  echo "[+] No port specified, running on a random port: $PORT"
-  python -m http.server $PORT
+  re='^[0-9]+$' # Whether it is a number
+  if [[ $1 =~ $re ]] ; then
+    # port can be within 0-65535 only
+    if ! [ $1 -ge 0 -a $1 -le 65535 ]; 
+    then
+      echo "Port number must be between 0 and 65535"
+      return 
+    fi  
+     python -m http.server $1
+  else
+     echo "[i] Empty Or Invalid Port Number Specified." >&2;
+     local PORT=$(($RANDOM+3000))
+     echo -e "\e[33m Running on a random port: $PORT \e[0m"
+     python -m http.server $PORT
   fi
-}
 
-todo(){
-	/usr/bin/cat ~/workspace/temp/TODO.md	
-	printf "\n" 
+  # if [ -n "$1" ]; then
+  # python -m http.server $1
+  # else 
+  # local PORT=$(($RANDOM+3000))
+  # echo -e "\e[33m[+] No port specified, running on a random port: $PORT \e[00m"
+  # python -m http.server $PORT
+  # fi
 }
 
 # Uses fzf, fd
@@ -71,8 +92,6 @@ cd_with_fzf() {
 cdf() {
 	cd_with_fzf
 }
-
-
 # Examples:
 #     ix hello.txt              # paste file (name/ext will be set).
 #     echo Hello world. | ix    # read from STDIN (won't set name/ext).
@@ -106,40 +125,11 @@ ix() {
 }
 
 ### Qickly make a backup of a file
-
 back() { 
 	cp "$1"{,.bak};
 }
 
-# md5check [file] [key]
-
- # md5check() {
-	 # if[ -f "$1" ]; then
-	 # md5sum "$1" | grep "$2";
-	 # else
-	 # echo "Usage: md5check [file] [key]"
-	 # fi
- # }
-# 
-
-# Dog - https://github.com/ogham/dog
-
-
+# Grep current directories' files for todos etc
 todos() {
 	rg 'TODO|FIXME|WARN|BUG'
 }
-
-# gbr_trim() {
-	  # local var="$*"
-	  # var="${var#"${var%%[![:space:]]*}"}"
-	  # var="${var%"${var##*[![:space:]]}"}"
-	  # echo -n "$var"
-	# }
-# 
-# gbr() {
-	# BRANCH=$(gbr_trim "$(git branch --all | rg -v "^\*" | sed "s/remotes\/origin\///g" | sort | uniq | grep -v HEAD | fzf)")
-	# if [[ -n "$BRANCH" ]]; then
-	   # echo "Switching to $BRANCH"
-	      # git checkout "$BRANCH"
-	# fi
-# }
