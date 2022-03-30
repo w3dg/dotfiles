@@ -124,7 +124,7 @@ ix() {
     curl $opts -F f:1='<-' $* ix.io/$id
 }
 
-### Qickly make a backup of a file
+# Qickly make a backup of a file
 back() { 
 	cp "$1"{,.bak};
 }

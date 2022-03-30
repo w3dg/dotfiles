@@ -18,3 +18,4 @@ Installed apps:
   * tokei 12.1.2 [main]
   * wget 1.21.2 [main]
   * zoxide 0.8.0 [main]
+  * watchexec 0.9.0 [main]

@@ -4,6 +4,13 @@
 # Yarn PATH
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+# Load Up Some Cool ColorScripts!! https://gitlab.com/dwt1/shell-color-scripts
+~/code/repos/Color-Scripts/color-scripts/dotx
+# Echo the current date
+echo "Today is $(date)"
+echo ""
+
+source ~/.bash/fortune.bash        # Fortune
 source ~/.bash/bindings.bash       # Bindings
 source ~/.bash/shopts.bash         # Shopts
 source ~/.bash/exports.bash        # Exports
@@ -29,6 +36,3 @@ eval "$(zoxide init bash)"
 
 # Starship prompt - https://starship.rs
 eval "$(starship init bash)"
-
-# Load Up Some Cool ColorScripts!! https://gitlab.com/dwt1/shell-color-scripts
-~/zwaves

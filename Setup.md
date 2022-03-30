@@ -16,21 +16,10 @@ Get it here:- https://nodejs.dev/
 
 npm_global modules access - https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
 
-- gitignore
-- live-server
-- npm-check-updates
-- npkill
-- reveal-md
-- serve
-- sass
-- tldr
-- ts-node
-- tsc
-- vercel
-- @vue/cli
-- yarn
+Check npm-global-packages.txt for updated list of global packages
 
 Login to Vercel - `vercel login`
+Login to npm 
 
 **IMPORTANT** **WINDOWS**
 
@@ -40,8 +29,6 @@ https://github.com/yarnpkg/yarn/issues/990
 ## Heroku
 
 Get it (CLI ) here:- https://devcenter.heroku.com/articles/heroku-cli
-`_netrc` file is config for heroku
-
 Login to heroku - `heroku login`
 
 ## :ice_cream: Scoop packages

@@ -11,5 +11,9 @@ export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear" # Dont record some comman
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
-# Set bat theme
-# export BAT_THEME="ansi"
+# FZF
+export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore -l ""'
+export FZF_DEFAULT_OPTS='--layout=reverse --keep-right'
+
+# Bat themes
+export BAT_THEME="base16"
