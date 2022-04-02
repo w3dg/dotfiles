@@ -2,8 +2,8 @@
 	editor = micro
 	safecrlf = false
 [user]
-	name = DG
-	email = 51162936+debopamgupta@users.noreply.github.com
+	name = w3dg
+	email = 51162936+w3dg@users.noreply.github.com
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
