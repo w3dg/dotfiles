@@ -15,24 +15,25 @@ min_time = 10_000  # Show command duration over 10,000 milliseconds (= 10 sec)
 [battery.display] # discharging_symbol when capacity is between 0% and 20%
 threshold = 20
 
-# Changes \ as path separator in Windows, always use / please.
 [directory]
-use_os_path_sep	= false
+truncation_length = 0
+truncate_to_repo = false
+use_os_path_sep	= false # Changes \ as path separator in Windows, always use / please.
 
 # #show host and user always
-# # 
-# [hostname]
-# ssh_only = false
-# style = "bold green"
-# format = "@[$hostname]($style) "
-# disabled = false
 
-# [username]
-# format = "[notdg04]($style)"
-# style_user = "bold blue"
-# show_always = true
+[hostname]
+ssh_only = false
+style = "bold green"
+format = "@[$hostname]($style) "
+disabled = false
 
-# # show local ip
+[username]
+format = "[notdg04]($style)"
+style_user = "bold blue"
+show_always = true
+
+# show local ip
 # [localip]
 # ssh_only = false
 # format = "[$localipv4](bold red) "
@@ -101,3 +102,4 @@ disabled = true
 
 [swift]
 disabled = true
+
