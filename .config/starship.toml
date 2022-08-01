@@ -4,7 +4,7 @@ add_newline = true
 [line_break]
 disabled = false
 # Change command timeout from 500 to 1000 ms
-command_timeout = 500
+command_timeout = 1000
 
 [cmd_duration]
 min_time = 10_000  # Show command duration over 10,000 milliseconds (= 10 sec)
@@ -12,26 +12,38 @@ min_time = 10_000  # Show command duration over 10,000 milliseconds (= 10 sec)
 # [git_branch]
 # symbol = "שׂ "
 
-[battery.display] # discharging_symbol when capacity is between 0% and 20%
+# disable metrics, may slow down..
+
+[git_status]
+disabled = true
+
+
+[[battery.display]]
 threshold = 20
+style = "bold red"
 
 [directory]
-truncation_length = 0
-truncate_to_repo = false
+# truncation_length = 3
+# truncate_to_repo = false
 use_os_path_sep	= false # Changes \ as path separator in Windows, always use / please.
+
+# [time]
+# disabled = false
+# format = '🕙[\[ $time \]]($style) '
+# time_format = "%T"
 
 # #show host and user always
 
-[hostname]
-ssh_only = false
-style = "bold green"
-format = "@[$hostname]($style) "
-disabled = false
+# [hostname]
+# ssh_only = false
+# style = "bold green"
+# format = "@[$hostname]($style) "
+# disabled = false
 
-[username]
-format = "[notdg04]($style)"
-style_user = "bold blue"
-show_always = true
+# [username]
+# format = "[dg]($style)"
+# style_user = "bold blue"
+# show_always = true
 
 # show local ip
 # [localip]
@@ -45,6 +57,17 @@ show_always = true
 # Remove every package detections
 
 [aws]
+disabled = true
+
+[azure]
+disabled = true
+
+
+[c]
+disabled = true
+
+
+[crystal]
 disabled = true
 
 [conda]
@@ -64,8 +87,6 @@ disabled = true
 
 [golang]
 disabled = true
-
-[hg_branch]
 
 [java]
 disabled = true
