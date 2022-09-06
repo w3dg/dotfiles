@@ -4,6 +4,7 @@
 [user]
 	name = w3dg
 	email = 51162936+w3dg@users.noreply.github.com
+	signingkey = 57CBFE18789E8433
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -15,3 +16,5 @@
 	prune = true
 [format]
 	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[commit]
+	gpgsign = true
