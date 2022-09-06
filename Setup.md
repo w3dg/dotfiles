@@ -92,6 +92,10 @@ Set the **Path** variable for Java, Visual Studio Code, etc
 - **Microsoft Office**
 - **Microsoft Teams**
 
+## Terminal
+
+Setup Git , SSH, GPG
+
 ## VSCode
 
 Although I am pretty sure Settings Sync will handle this all but still heres a copy of the settings file.
