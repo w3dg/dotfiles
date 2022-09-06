@@ -4,7 +4,7 @@
 [user]
 	name = w3dg
 	email = 51162936+w3dg@users.noreply.github.com
-	signingkey = 57CBFE18789E8433
+	signingkey = B65AE0EA914A04E8
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
