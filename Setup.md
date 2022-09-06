@@ -94,7 +94,7 @@ Set the **Path** variable for Java, Visual Studio Code, etc
 
 ## Terminal
 
-Setup Git , SSH, GPG
+Setup Git , [SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh), [GPG](https://garrytrinder.github.io/2021/09/get-verified-configure-signed-git-commit-signing-on-windows)
 
 ## VSCode
 
