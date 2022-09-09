@@ -9,7 +9,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 echo "Today is $(date +"%a, %F %T")"
 echo ""
 
-eval "$(dircolors -b ~/.dircolors)"
+eval "$(dircolors -b ~/solarized.dircolors)"
 
 source ~/.bash/bindings.bash       # Bindings
 source ~/.bash/shopts.bash         # Shopts
@@ -19,8 +19,11 @@ source ~/.bash/node_completion.bash # Node Completions
 source ~/.bash/functions.bash      # Custom functions
 source ~/.bash/aliases.bash        # Aliases
 source ~/.bash/git_aliases.bash    # Git aliases
-source ~/.bash/fortune.bash        # Fortune
+# source ~/.bash/fortune.bash        # Fortune
 
+alias fortune="~/code/fortune-node/index.js"
+
+# fortune | lolcat
 fortune
 
 # Allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
@@ -33,10 +36,8 @@ export PS1='\[\033]0;Bash \007\]'
 # export PS1='\[\e[01;32m\]\u\[\e[00;33m\]@\[\e[1;34m\]\h\[\e[01;00m\]:\[\e[01;36m\]\w\[\e[00;32m\] `echo $(__git_ps1 "(%s)")`\n\[\e[01;35m\]❯\[\e[01;00m\] '
 
 # custom with date
- # export PS1='\n\[\e[00;31m\]dg@\[\e[01;31m\]delta\[\e[01;00m\] \[\e[01;35m\]\w\[\e[00;32m\] `echo $(__git_ps1 "[%s]")` \[\e[00;34m\]`date +"%T"`\n\[\e[01;32m\]❯\[\e[01;00m\] '
+export PS1='\n\[\e[00;31m\]dg@\[\e[01;31m\]delta\[\e[01;00m\] \[\e[01;35m\]\w\[\e[00;32m\] `echo $(__git_ps1 "[%s]")` \[\e[00;34m\]`date +"%T"`\n\[\e[01;32m\]❯\[\e[01;00m\] '
 
-# custom without date
- export PS1='\n\[\e[00;31m\]dg@\[\e[01;31m\]delta\[\e[01;00m\] \[\e[01;35m\]\w\[\e[00;32m\] `echo $(__git_ps1 "[%s]")`\n\[\e[01;32m\]❯\[\e[01;00m\] '
 
 # export PS1='🦄\[\e[0;36m\] \W\[\033[0;35m\]$(__git_ps1 " (%s)")\[\e[0m\] ❯ '
 
