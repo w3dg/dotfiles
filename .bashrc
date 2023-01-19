@@ -1,4 +1,4 @@
- # If not running interactively, don't do anything
+# If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 # Yarn PATH
@@ -9,35 +9,34 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 echo "Today is $(date +"%a, %F %T")"
 echo ""
 
-eval "$(dircolors -b ~/solarized.dircolors)"
+eval "$(dircolors -b ~/.dircolors)"
 
 source ~/.bash/bindings.bash       # Bindings
 source ~/.bash/shopts.bash         # Shopts
 source ~/.bash/exports.bash        # Exports
-source ~/.bash/npm-completion.bash # NPM Completions
-source ~/.bash/node_completion.bash # Node Completions
 source ~/.bash/functions.bash      # Custom functions
 source ~/.bash/aliases.bash        # Aliases
 source ~/.bash/git_aliases.bash    # Git aliases
-# source ~/.bash/fortune.bash        # Fortune
 
 alias fortune="~/code/fortune-node/index.js"
-
-# fortune | lolcat
-fortune
+# npm i -g cowsay ( on a linux machine just do it)
+fortune | cowsay
 
 # Allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
 set input-meta on
 set output-meta on
 set convert-meta off
 
+
+emojis=("👾" "🌐" "🎲" "🌍" "🐉" "🖕" "🌵" "😊" "🤯" "👽" "🦄" "🐽" "🐍" "🦖" "🦕" "🐊" "🐢" "🐧" "💎" "🪄" "🍀" "🌈" "⚡" "🔥" "🌊")
+EMOJI=${emojis[$RANDOM % ${#emojis[@]} ]}
+
 export PS1='\[\033]0;Bash \007\]'
 # full user info
-# export PS1='\[\e[01;32m\]\u\[\e[00;33m\]@\[\e[1;34m\]\h\[\e[01;00m\]:\[\e[01;36m\]\w\[\e[00;32m\] `echo $(__git_ps1 "(%s)")`\n\[\e[01;35m\]❯\[\e[01;00m\] '
+ # export PS1='\[\e[01;32m\]\u\[\e[00;33m\]@\[\e[1;34m\]\h\[\e[01;00m\]:\[\e[01;36m\]\w\[\e[00;32m\] `echo $(__git_ps1 "(%s)")`\n\[\e[01;35m\]❯\[\e[01;00m\] '
 
-# custom with date
-export PS1='\n\[\e[00;31m\]dg@\[\e[01;31m\]delta\[\e[01;00m\] \[\e[01;35m\]\w\[\e[00;32m\] `echo $(__git_ps1 "[%s]")` \[\e[00;34m\]`date +"%T"`\n\[\e[01;32m\]❯\[\e[01;00m\] '
-
+# export PS1='\n\[\e[00;31m\]dg@\[\e[01;31m\]cal\[\e[01;00m\] \[\e[01;35m\]\w\[\e[00;32m\] `echo $(__git_ps1 "[%s]")` \n\[\e[01;32m\]$EMOJI ❯\[\e[01;00m\] '
+export PS1='\n\[\e[00;33m\]dg\[\e[00;33m\]@\[\e[01;33m\]beverly\[\e[01;00m\] \[\e[01;36m\]\w\[\e[00;32m\] `echo $(__git_ps1 "[%s]")` \n\[\e[01;32m\]$EMOJI λ\[\e[01;00m\] '
 
 # export PS1='🦄\[\e[0;36m\] \W\[\033[0;35m\]$(__git_ps1 " (%s)")\[\e[0m\] ❯ '
 
@@ -48,6 +47,3 @@ eval "$(zoxide init bash)"
 
 # fzf - Website: https://github.com/junegunn/fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# Starship prompt - https://starship.rs
-# eval "$(starship init bash)"

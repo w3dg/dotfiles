@@ -2,9 +2,10 @@
 
 # `ls` ALIASED TO `lsd` Website: https://github.com/Peltoche/lsd
 # Can use `exa` as well Website: https://the.exa.website/
-alias ls='lsd'
-# alias ls='ls --color -F --group-directories-first' # for normal ls
-alias ls='lsd --group-dirs first'
+# alias ls='lsd'
+# for normal ls
+alias ls='ls --color -F --group-directories-first' 
+# alias ls='ls --group-dirs first'
 alias lt='ls -lAh --total-size'
 alias ll='ls -lAh'
 alias l='ls -1'
