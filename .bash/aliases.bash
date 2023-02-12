@@ -67,3 +67,13 @@ alias path='echo -e ${PATH//:/\\n}'
 
 ## NPM Project Aliases ##
 alias vitenew='npm create vite@latest'
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+

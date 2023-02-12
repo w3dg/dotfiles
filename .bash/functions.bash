@@ -133,3 +133,12 @@ back() {
 todos() {
 	rg 'TODO|FIXME|WARN|BUG'
 }
+
+cleangit () {
+  echo -e "WARNING: If you're on, say, a development branch that was branched off of master, you'll lose your master branch";
+  echo -e "still want to do this? [y/N]";
+  read REMOVE
+  if [ "$REMOVE" = "y" ] || [ "$REMOVE" = "Y" ]; then
+    git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d
+  fi
+}

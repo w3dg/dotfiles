@@ -26,3 +26,8 @@ bind 'set mark-symlinked-directories On'
 bind 'set show-all-if-ambiguous On'
 bind 'set show-all-if-unmodified On'
 bind 'set visible-stats On'
+
+# Allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
+bind "set input-meta on"
+bind "set output-meta on"
+bind "set convert-meta off"
