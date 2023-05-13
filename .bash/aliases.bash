@@ -4,8 +4,7 @@
 # Can use `exa` as well Website: https://the.exa.website/
 # alias ls='lsd'
 # for normal ls
-alias ls='ls --color -F --group-directories-first' 
-# alias ls='ls --group-dirs first'
+alias ls='ls --color -F --group-directories-first'
 alias lt='ls -lAh --total-size'
 alias ll='ls -lAh'
 alias l='ls -1'
@@ -61,6 +60,7 @@ alias weather='curl wttr.in/'
 alias reveal-md="reveal-md --theme night --highlight-theme hybrid --port 1337 --w --css style.css"
 # Open Settings for Windows terminal
 alias wtsetting="$EDITOR ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
+alias sublwt="subl $(alias wtsetting | cut  -d' ' -f3 | tr -d "'")"
 
 # Print Each Path entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
@@ -77,3 +77,9 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 
+# Yt-dlp download best quality audio and video merge them into mp4
+# Requires ffmpeg
+alias yt-dlp="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
+
+# https://www.npmjs.com/package/trash-cli
+alias rm='trash'

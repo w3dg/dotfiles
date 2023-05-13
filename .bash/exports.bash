@@ -2,6 +2,8 @@
 export CLICOLOR=1
 export LSCOLORS='exfxcxdxbxegedabagacad'
 
+export PROMPT_DIRTRIM=3
+
 # export EDITOR="nano" 
 export EDITOR="micro" 
 export LANG="en_US.UTF-8"
@@ -16,4 +18,4 @@ export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore -l ""'
 export FZF_DEFAULT_OPTS='--layout=reverse --keep-right'
 
 # Bat themes
-export BAT_THEME="base16"
+export BAT_THEME="Visual Studio Dark+"
