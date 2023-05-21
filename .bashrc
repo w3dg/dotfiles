@@ -1,4 +1,3 @@
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -43,6 +42,11 @@ reset="\[\e[m\]"
 
 # Customize prompt
 prompt_command() {
+  # sync history between terminals
+  history -a; # append to history file the current session
+  history -c; # clear history for current session
+  history -r; # read in the latest everywhere
+  
   local status="$?"
   local status_color=""
   if [ $status != 0 ]; then

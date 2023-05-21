@@ -18,4 +18,4 @@ export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore -l ""'
 export FZF_DEFAULT_OPTS='--layout=reverse --keep-right'
 
 # Bat themes
-export BAT_THEME="Visual Studio Dark+"
+export BAT_THEME="zenburn"
