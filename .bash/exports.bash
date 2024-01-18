@@ -14,8 +14,14 @@ export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear" # Dont record some comman
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # FZF
-export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore -l ""'
+# export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore -l ""'
 export FZF_DEFAULT_OPTS='--layout=reverse --keep-right'
 
 # Bat themes
-export BAT_THEME="zenburn"
+export BAT_THEME="Monokai Extended"
+
+# colored GCC warnings and errors
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# micro theme catpuccin https://github.com/catppuccin/micro
+export "MICRO_TRUECOLOR=1"

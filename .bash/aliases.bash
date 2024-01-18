@@ -2,11 +2,14 @@
 
 # `ls` ALIASED TO `lsd` Website: https://github.com/Peltoche/lsd
 # Can use `exa` as well Website: https://the.exa.website/
+
+# https://github.com/eza-community/eza
+
 # alias ls='lsd'
 # for normal ls
-alias ls='ls --color -F --group-directories-first'
-alias lt='ls -lAh --total-size'
-alias ll='ls -lAh'
+# alias ls='ls --color -F --group-directories-first'
+alias ls='eza --color=auto -F --group-directories-first'
+alias ll='ls --git -lAh'
 alias l='ls -1'
 alias la='ls -A'
 alias sl='ls'

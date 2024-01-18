@@ -85,8 +85,8 @@ up() {
 
 # Uses fzf, fd
 cd_with_fzf() {
-    # cd $HOME && cd "$(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)"
-	cd "$(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)"
+    # cd $HOME && cd "$(fd -t d | fzf)"
+	cd "$(fd -t d --maxdepth 3 --exclude node_modules --exclude .git | fzf)"
 }
 
 cdf() {
