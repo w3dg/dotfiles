@@ -22,7 +22,13 @@ source ~/.bash/pandoc-completion.bash # pandoc completion
 
 alias fortune="~/code/fortune-node/index.js"
 # npm i -g cowsay ( on a linux machine just do it)
-fortune | cowsay -f tux
+# fortune | cowsay -f tux
+
+if [ $RANDOM -ge 15000 ]; then
+	asciiCats nyan | lolcat
+else
+	fortune | cowsay -f tux | lolcat 	
+fi
 
 # zoxide - Website: https://github.com/ajeetdsouza/zoxide
 eval "$(zoxide init bash)"
@@ -51,9 +57,12 @@ prompt_command() {
 export PROMPT_COMMAND=prompt_command
 
 # colors from https://robotmoon.com/bash-prompt-generator/
-# export PS1="\[\e[38;5;39m\]\u\[\e[38;5;45m\]@\[\e[38;5;51m\]\h \[\e[38;5;195m\]\w \[\033[0m\]$ "
+# export PS1="\[\e[38;5;39m\]\u\[\e[38;5;45m\]@\[\e[38;5;51m\]\h \[\e[38;5;195m\]\w \[\033[0m\]$ " # Sea
+# export PS1="\[\e[38;5;33m\]\u\[\e[38;5;69m\]@\[\e[38;5;105m\]\h \[\e[38;5;141m\]\w \[\033[0m\]$ " # Twilight
+# export PS1="\[\e[38;5;34m\]\u\[\e[38;5;40m\]@\[\e[38;5;46m\]\h \[\e[38;5;154m\]\w \[\033[0m\]$ " # Emerald Green
+# export PS1='\n\[\e[01;36m\]\w\[\e[01;32m\] `echo $(__git_ps1 "git:(%s)")` \n❯\[\e[01;00m\] '
 
-export PS1='\n\[\e[01;36m\]\w\[\e[01;32m\] `echo $(__git_ps1 "git:(%s)")` \n❯\[\e[01;00m\] '
+export PS1='\n\[\e[38;5;158m\]\w\[\e[38;5;245m\] `echo $(__git_ps1 "git:(%s)")` \n\[\e[38;5;33m\]❯\[\e[01;00m\] '
 
 export PS2='continue>'
 
