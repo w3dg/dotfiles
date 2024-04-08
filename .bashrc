@@ -62,8 +62,36 @@ export PROMPT_COMMAND=prompt_command
 # export PS1="\[\e[38;5;34m\]\u\[\e[38;5;40m\]@\[\e[38;5;46m\]\h \[\e[38;5;154m\]\w \[\033[0m\]$ " # Emerald Green
 # export PS1='\n\[\e[01;36m\]\w\[\e[01;32m\] `echo $(__git_ps1 "git:(%s)")` \n❯\[\e[01;00m\] '
 
-export PS1='\n\[\e[38;5;158m\]\w\[\e[38;5;245m\] `echo $(__git_ps1 "git:(%s)")` \n\[\e[38;5;33m\]❯\[\e[01;00m\] '
+# export PS1='🦄 \[\e[0;36m\]\[\e[0;36m\] \W\[\033[0;35m\]$(__git_ps1 " (%s)")\[\e[0m\]: '
 
-export PS2='continue>'
+export PS1='\n\[\e[01;36m\]\w\[\e[01;33m\]$(__git_ps1 " (%s)") \[\e[38;5;182m\]|\[\e[01;00m\] '
+export PS2="... "
+# ❯
 
 [ -f ~/.inshellisense/key-bindings.bash ] && source ~/.inshellisense/key-bindings.bash
+
+# PS1="\n\[\e[32;1m\](\[\e[37;1m\]\u\[\e[32;1m\])-(\[\e[37;1m\]jobs:\j\[\e[32;1m\])-(\[\e[37;1m\]\w\[\e[32;1m\])\n(\[\[\e[37;1m\]! \!\[\e[32;1m\])-> \[\e[0m\]"
+# export PS1='\n\[\e[38;5;10m\]\W\[\e[38;5;241m\] \A \[\e[38;5;182m\] `echo $(__git_ps1 "git:[%s]")` \n\[\e[38;5;33m\]❯\[\e[01;00m\] '
+
+#####
+# PS1='\[\e[1;34m\]┌─[\[\e[m\]'
+# PS1=$PS1'\[\e[1;32m\]\u\[\e[m\]'
+# PS1=$PS1'\[\e[1;30m\]@\[\e[m\]'
+# PS1=$PS1'\[\e[0;36m\]\h\[\e[m\]'
+# PS1=$PS1'\[\e[1;34m\]]\[\e[m\]'
+# PS1=$PS1'\[\e[0;37m\] - \[\e[m\]'
+# PS1=$PS1'\[\e[1;34m\][\[\e[m\]'
+# PS1=$PS1'\[\e[1;37m\]\w\[\e[m\]'
+# PS1=$PS1'\[\e[1;34m\]]\[\e[m\]'
+# PS1=$PS1'\[\e[0;37m\] - \[\e[m\]'
+# PS1=$PS1'\[\e[1;34m\][\[\e[m\]'
+# PS1=$PS1"\[\e[0;33m\]$(date +'%a %b %d, %I:%M')\[\e[m\]"
+# PS1=$PS1'\[\e[1;34m\]]\[\e[m\]'
+# PS1=$PS1'\n'
+# 
+# PS1=$PS1'\[\e[1;34m\]└─[\[\e[m\]'
+# PS1=$PS1'\[\e[1;35m\]\$\[\e[m\]'
+# PS1=$PS1'\[\e[1;34m\]]>\[\e[m\]'
+# 
+# PS2='\[\e[1;34m\]     >\[\e[m\]'
+####
