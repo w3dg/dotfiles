@@ -18,7 +18,7 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 export FZF_DEFAULT_OPTS='--layout=reverse --keep-right'
 
 # Bat themes
-export BAT_THEME="Catppuccin Mocha"
+export BAT_THEME="Visual Studio Dark+"
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'

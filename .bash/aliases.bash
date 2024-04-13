@@ -32,7 +32,7 @@ alias reload='source ~/.bashrc'
 # confirm before overwriting something and verbose output
 alias cp='cp -iv'
 alias mv='mv -iv'
-alias rm='rm -iv'
+alias rm='rm -iIv'
 
 # Additional Programs replacing normal ones
 # bat is a rust utility similar to the cat(1) command. install via scoop or other package manager https://github.com/sharkdp/bat

@@ -25,9 +25,9 @@ alias fortune="~/code/fortune-node/index.js"
 # fortune | cowsay -f tux
 
 if [ $RANDOM -ge 15000 ]; then
-	asciiCats nyan | lolcat
+	asciiCats nyan
 else
-	fortune | cowsay -f tux | lolcat 	
+	fortune | cowsay -f tux 
 fi
 
 # zoxide - Website: https://github.com/ajeetdsouza/zoxide
@@ -64,7 +64,7 @@ export PROMPT_COMMAND=prompt_command
 
 # export PS1='🦄 \[\e[0;36m\]\[\e[0;36m\] \W\[\033[0;35m\]$(__git_ps1 " (%s)")\[\e[0m\]: '
 
-export PS1='\n\[\e[01;36m\]\w\[\e[01;33m\]$(__git_ps1 " (%s)") \[\e[38;5;182m\]|\[\e[01;00m\] '
+export PS1='\n $EMOJI \[\e[01;36m\]\w\[\e[01;33m\]$(__git_ps1 " (%s)") \[\e[38;5;182m\]|\[\e[01;00m\] '
 export PS2="... "
 # ❯
 
