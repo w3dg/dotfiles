@@ -10,5 +10,4 @@ baseUrl=https://old.reddit.com
 json=$(curl -s  $baseUrl/r/$subname/new.json)
 
 selectedPost=`echo $json | jq -r '.data.children | .[] | "\(.data.title)\t\(.data.permalink)"' | fzf --delimiter='\t' --with-nth=1 |cut -f2`
-echo $baseUrl$selectedPost | clip
-echo "Post link copied to clipboard"
+explorer $baseUrl$selectedPost 
